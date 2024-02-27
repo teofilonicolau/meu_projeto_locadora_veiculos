@@ -1,4 +1,6 @@
-## Locadora de Veículos
+## Locadora de Veículos:
+Este é um projeto de uma Locadora de Veículos em Java usando o framework Spring Boot. 
+
  ## API para Locadora de Veículos com PostgreSQL em Docker
  ## Tecnologias utilizadas:
 Java 17
@@ -9,43 +11,6 @@ Thymeleaf
 Bootstrap 5
 ## Estrutura do projeto :
 ![image](https://github.com/teofilonicolau/meu_projeto_locadora_veiculos/assets/97030160/3a781383-034f-43a6-ac72-deb85f6154d1)
-
-
-Claro, aqui está o README em formato Markdown:
-
-markdown
-Copy code
-# Locadora de Veículos
-
-Este é um projeto de uma Locadora de Veículos em Java usando o framework Spring Boot. Até o momento, o backend está completamente implementado, enquanto algumas melhorias ainda são necessárias no frontend, especialmente para habilitar as operações CRUD (Create, Read, Update, Delete).
-
-## Estrutura do Projeto
-
-LocadoraMeuProjeto
-|-- .idea
-|-- .mvn
-|-- infra
-|-- docker-compose-postgres.yaml
-|-- src
-| -- main | -- java
-| -- locadoraveiculos | |-- controller | | -- VeiculoController
-| |-- exception
-| | -- VeiculoNotFoundException | |-- model | | -- Veiculo
-| |-- repository
-| | -- VeiculoRepository | -- service
-| -- VeiculoService | -- resources
-| |-- images
-| | -- car.png | | -- locadoraFavicon.png
-| -- static | -- style.css
-| -- templates | |-- base.html | |-- index.html | -- veiculos.html
-| `-- test
-|-- target
-|-- thunder
-|-- .gitignore
-|-- mvnw
-|-- mvnw.cmd
-|-- pom.xml
-|-- README.md
 
 ## Banco de dados
 O banco de dados PostgreSQL é executado em um container Docker. O arquivo docker-compose.yaml define a configuração do container.
